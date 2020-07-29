@@ -3,6 +3,8 @@ package com.codingwithmitch.mvvmrecyclerview.viewmodels;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+
+import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 
 import com.codingwithmitch.mvvmrecyclerview.models.NicePlace;
@@ -24,6 +26,7 @@ public class MainActivityViewModel extends ViewModel {
         mNicePlaces = mRepo.getNicePlaces();
     }
 
+    @SuppressLint("StaticFieldLeak")
     public void addNewValue(final NicePlace nicePlace){
         mIsUpdating.setValue(true);
 
@@ -32,6 +35,7 @@ public class MainActivityViewModel extends ViewModel {
             protected void onPostExecute(Void aVoid) {
                 super.onPostExecute(aVoid);
                 List<NicePlace> currentPlaces = mNicePlaces.getValue();
+                assert currentPlaces != null;
                 currentPlaces.add(nicePlace);
                 mNicePlaces.postValue(currentPlaces);
                 mIsUpdating.postValue(false);

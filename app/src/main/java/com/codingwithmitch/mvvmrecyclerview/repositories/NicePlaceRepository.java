@@ -34,7 +34,7 @@ public class NicePlaceRepository {
 
     private void setNicePlaces(){
         dataSet.add(
-                new NicePlace("https://c1.staticflickr.com/5/4636/25316407448_de5fbf183d_o.jpg",
+                new NicePlace("https://i.redd.it/lz69it7m5ly41.jpg",
                         "Havasu Falls")
         );
         dataSet.add(
@@ -58,7 +58,7 @@ public class NicePlaceRepository {
                         "Mahahual")
         );
         dataSet.add(
-                new NicePlace("https://c1.staticflickr.com/5/4636/25316407448_de5fbf183d_o.jpg",
+                new NicePlace("https://i.redd.it/slt1sunr37351.png",
                         "Frozen Lake")
         );
         dataSet.add(
