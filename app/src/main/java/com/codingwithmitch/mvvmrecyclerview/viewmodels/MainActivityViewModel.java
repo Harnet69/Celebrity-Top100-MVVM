@@ -9,21 +9,26 @@ import android.os.AsyncTask;
 
 import com.codingwithmitch.mvvmrecyclerview.models.NicePlace;
 import com.codingwithmitch.mvvmrecyclerview.repositories.NicePlaceRepository;
+import com.codingwithmitch.mvvmrecyclerview.repositories.NicePlacesFromSiteRepository;
 
 import java.util.List;
 
 public class MainActivityViewModel extends ViewModel {
 
-    private MutableLiveData<List<NicePlace>> mNicePlaces;
-    private NicePlaceRepository mRepo;
+    private MutableLiveData<List<NicePlace>> mNicePlaces; // keep an observable list of places
+//    private NicePlaceRepository mRepo; // link to places repository
+    private NicePlacesFromSiteRepository m2Repo;
     private MutableLiveData<Boolean> mIsUpdating = new MutableLiveData<>();
 
     public void init(){
         if(mNicePlaces != null){
             return;
         }
-        mRepo = NicePlaceRepository.getInstance();
-        mNicePlaces = mRepo.getNicePlaces();
+//        mRepo = NicePlaceRepository.getInstance();
+//        mNicePlaces = mRepo.getNicePlaces();
+
+        m2Repo = NicePlacesFromSiteRepository.getInstance();
+        mNicePlaces = m2Repo.getNicePlaces();
     }
 
     @SuppressLint("StaticFieldLeak")

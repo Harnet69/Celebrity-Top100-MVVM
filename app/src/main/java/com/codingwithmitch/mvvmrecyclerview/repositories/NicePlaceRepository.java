@@ -12,7 +12,6 @@ import java.util.List;
  * Singleton pattern
  */
 public class NicePlaceRepository {
-
     private static NicePlaceRepository instance;
     private ArrayList<NicePlace> dataSet = new ArrayList<>();
 
@@ -23,12 +22,11 @@ public class NicePlaceRepository {
         return instance;
     }
 
-
     // Pretend to get data from a webservice or online source
     public MutableLiveData<List<NicePlace>> getNicePlaces(){
         setNicePlaces();
         MutableLiveData<List<NicePlace>> data = new MutableLiveData<>();
-        data.setValue(dataSet);
+        data.setValue(dataSet); // add usual list to observable MutableLiveData List
         return data;
     }
 
