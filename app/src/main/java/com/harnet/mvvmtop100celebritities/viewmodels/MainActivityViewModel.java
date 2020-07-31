@@ -1,4 +1,4 @@
-package com.codingwithmitch.mvvmrecyclerview.viewmodels;
+package com.harnet.mvvmtop100celebritities.viewmodels;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -7,9 +7,8 @@ import androidx.lifecycle.ViewModel;
 import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 
-import com.codingwithmitch.mvvmrecyclerview.models.NicePlace;
-import com.codingwithmitch.mvvmrecyclerview.repositories.NicePlaceRepository;
-import com.codingwithmitch.mvvmrecyclerview.repositories.NicePlacesFromSiteRepository;
+import com.harnet.mvvmtop100celebritities.models.NicePlace;
+import com.harnet.mvvmtop100celebritities.repositories.NicePlacesFromSiteRepository;
 
 import java.util.List;
 

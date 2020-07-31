@@ -1,6 +1,6 @@
-package com.codingwithmitch.mvvmrecyclerview.services.webService;
+package com.harnet.mvvmtop100celebritities.services.webService;
 
-import com.codingwithmitch.mvvmrecyclerview.models.SourceSite;
+import com.harnet.mvvmtop100celebritities.models.SourceSite;
 
 import java.util.ArrayList;
 import java.util.List;

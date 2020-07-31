@@ -1,4 +1,4 @@
-package com.codingwithmitch.mvvmrecyclerview;
+package com.codingwithmitch.mvvmtop100celebritities;
 
 import android.content.Context;
 

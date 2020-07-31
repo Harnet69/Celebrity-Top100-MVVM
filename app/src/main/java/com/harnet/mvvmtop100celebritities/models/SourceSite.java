@@ -1,4 +1,4 @@
-package com.codingwithmitch.mvvmrecyclerview.models;
+package com.harnet.mvvmtop100celebritities.models;
 
 public class SourceSite {
     private String name;

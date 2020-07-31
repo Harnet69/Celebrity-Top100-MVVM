@@ -1,8 +1,10 @@
-package com.codingwithmitch.mvvmrecyclerview;
+package com.harnet.mvvmtop100celebritities;
 
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.annotation.Nullable;
+
+import com.codingwithmitch.mvvmtop100celebritities.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,9 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import com.codingwithmitch.mvvmrecyclerview.adapters.RecyclerAdapter;
-import com.codingwithmitch.mvvmrecyclerview.models.NicePlace;
-import com.codingwithmitch.mvvmrecyclerview.viewmodels.MainActivityViewModel;
+import com.harnet.mvvmtop100celebritities.adapters.RecyclerAdapter;
+import com.harnet.mvvmtop100celebritities.models.NicePlace;
+import com.harnet.mvvmtop100celebritities.viewmodels.MainActivityViewModel;
 
 import java.util.List;
 

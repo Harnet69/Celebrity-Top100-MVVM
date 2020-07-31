@@ -1,4 +1,4 @@
-package com.codingwithmitch.mvvmrecyclerview.adapters;
+package com.harnet.mvvmtop100celebritities.adapters;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.codingwithmitch.mvvmrecyclerview.R;
-import com.codingwithmitch.mvvmrecyclerview.models.NicePlace;
+import com.codingwithmitch.mvvmtop100celebritities.R;
+import com.harnet.mvvmtop100celebritities.models.NicePlace;
 
 import java.util.ArrayList;
 import java.util.List;

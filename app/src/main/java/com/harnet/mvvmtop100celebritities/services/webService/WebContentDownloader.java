@@ -1,4 +1,4 @@
-package com.codingwithmitch.mvvmrecyclerview.services.webService;
+package com.harnet.mvvmtop100celebritities.services.webService;
 
 import android.os.AsyncTask;
 

@@ -1,8 +1,8 @@
-package com.codingwithmitch.mvvmrecyclerview.repositories;
+package com.harnet.mvvmtop100celebritities.repositories;
 
 import androidx.lifecycle.MutableLiveData;
 
-import com.codingwithmitch.mvvmrecyclerview.models.NicePlace;
+import com.harnet.mvvmtop100celebritities.models.NicePlace;
 
 import java.util.ArrayList;
 import java.util.List;
